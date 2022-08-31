@@ -9,7 +9,7 @@
             <h2>A Br Solutions é especialista em desenvolvimento de sistemas focado em produtividade para o
               seu negócio decolar.</h2>
             <p>
-              Seja micro, media ou grande empresa, construiremos uma solução de lhe trará produtividade e
+              Seja pequena, media ou grande empresa, construiremos uma solução que lhe trará produtividade e
               segurança para tomar qualquer decisão.
             </p>
             <div class="text-center text-lg-start">
@@ -110,6 +110,7 @@
       </div>
     </div>
   </section><!-- End Counts Section -->
+
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
@@ -128,135 +129,25 @@
         </div>
       </div>
       <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/lkBrokers.PNG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Sales Control</h4>
-              <p>Sistema</p>
-              <div class="portfolio-links">
-                <a href="img/portfolio/lkBrokers.PNG" data-gallery="portfolioGallery"
-                   class="portfokio-lightbox"
-                   title="Dashboard do sistema de gestão de carteira focado em vendas de plano de saude e controle de leads"><i
-                    class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+        @foreach($projects as $project)
+          <div class="col-lg-4 col-md-6 portfolio-item {{$project->filter_template}}">
+            <div class="portfolio-wrap">
+              <img src="{{$project->imagem}}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{$project->nome}}</h4>
+                <p>{{$project->cartegoria}}</p>
+                <div class="portfolio-links">
+                  <a href="{{$project->imagem}}" data-gallery="portfolioGallery"
+                     class="portfokio-lightbox"
+                     title="{{$project->descricao}}"><i
+                      class="bi bi-plus"></i></a>
+                  <a href="{{route('site.portfolio', ['id' => $project->id])}}" title="More Details"><i
+                      class="bi bi-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/hitrading.PNG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>hit Trading</h4>
-              <p>Sistema</p>
-              <div class="portfolio-links">
-                <a href="img/portfolio/hitrading.PNG" data-gallery="portfolioGallery"
-                   class="portfokio-lightbox"
-                   title="Dashboard do sistema de gestão de carteira focada em investimentos"><i
-                    class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        @endforeach
       </div>
     </div>
   </section><!-- End Portfolio Section -->

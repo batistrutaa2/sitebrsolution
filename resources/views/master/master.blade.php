@@ -11,10 +11,9 @@
 <main id="main">
   @yield('content')
 </main>
-@include('master.footer')
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-  @include('master.scripts')
+  @include('master.footer')
   <footer>
-
+@include('master.scripts')
 </html>
