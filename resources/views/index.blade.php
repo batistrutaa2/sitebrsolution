@@ -174,68 +174,62 @@
   <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
       <header class="section-header">
-        <h2>Contact</h2>
+        <h2>Contato</h2>
         <p>Contate-nos</p>
       </header>
-      <div class="row gy-4">
-        <div class="col-lg-6">
-          <div class="row gy-4">
-            <div class="col-md-6">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-md-4">
               <div class="info-box">
                 <i class="bi bi-geo-alt"></i>
-                <h3>Address</h3>
-                <p>A108 Adam Street,<br>New York, NY 535022</p>
+                <h3>Endereço</h3>
+                <p>Av. Marques de São Vicente,<br>576 cj 806</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="info-box">
                 <i class="bi bi-telephone"></i>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                <h3>Nosso Telefone</h3>
+                <p>+55 (11) 9 3267-0639</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bi bi-envelope"></i>
-                <h3>Email Us</h3>
-                <p>info@example.com<br>contact@example.com</p>
-              </div>
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="info-box">
                 <i class="bi bi-clock"></i>
                 <h3>Open Hours</h3>
-                <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                <p>Segunda - Sexta<br>9:00 - 18:00</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <form action="#" method="post" class="php-email-form">
-            <div class="row gy-4">
+      </div>
+{{--        <div class="col-lg-6">--}}
+{{--          <form action="#" method="post" class="php-email-form">--}}
+{{--            <div class="row gy-4">--}}
 
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-              </div>
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-              </div>
-              <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                          required></textarea>
-              </div>
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-                <button type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
+{{--              <div class="col-md-6">--}}
+{{--                <input type="text" name="name" class="form-control" placeholder="Seu nome" required>--}}
+{{--              </div>--}}
+{{--              <div class="col-md-6 ">--}}
+{{--                <input type="email" class="form-control" name="email" placeholder="Seu email" required>--}}
+{{--              </div>--}}
+{{--              <div class="col-md-12">--}}
+{{--                <input type="text" class="form-control" name="subject" placeholder="Assunto" required>--}}
+{{--              </div>--}}
+{{--              <div class="col-md-12">--}}
+{{--                                <textarea class="form-control" name="message" rows="6" placeholder="Mensagem"--}}
+{{--                                          required></textarea>--}}
+{{--              </div>--}}
+{{--              <div class="col-md-12 text-center">--}}
+{{--                <div class="loading">Loading</div>--}}
+{{--                <div class="error-message"></div>--}}
+{{--                <div class="sent-message">Your message has been sent. Thank you!</div>--}}
+{{--                <button type="submit">Send Message</button>--}}
+{{--              </div>--}}
+{{--            </div>--}}
+{{--          </form>--}}
+{{--        </div>--}}
       </div>
     </div>
   </section><!-- End Contact Section -->
