@@ -15,7 +15,7 @@
             <div class="text-center text-lg-start">
               <a href="#contact"
                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Consulte Mais informações</span>
+                <span>Veja mais</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
