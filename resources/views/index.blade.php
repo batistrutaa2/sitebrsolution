@@ -141,7 +141,7 @@
                      class="portfokio-lightbox"
                      title="{{$project->descricao}}"><i
                       class="bi bi-plus"></i></a>
-                  <a href="{{route('site.portfolio', ['id' => $project->id])}}" title="More Details"><i
+                  <a href="#" title="More Details"><i
                       class="bi bi-link"></i></a>
                 </div>
               </div>
